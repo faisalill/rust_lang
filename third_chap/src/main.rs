@@ -87,4 +87,18 @@ fn main() {
     let element = a[index];
 
     println!("The value of the element at index {index} is: {element}");
+    simple_function()
+}
+
+fn simple_function() {
+    println!("printing another function");
+}
+
+// return data type is marked with ->
+fn five() -> i32 {
+    5
+}
+// function with multiple parameteres
+fn print_labeled_measurement(value: i32, unit_label: char) {
+    println!("The measurement is: {value}{unit_label}");
 }
